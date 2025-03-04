@@ -6,50 +6,56 @@
 
     <!-- External Entities -->
     <mxCell id="2" value="Customer" style="shape=rectangle;fillColor=#FFFF99;" vertex="1" parent="1">
-      <mxGeometry x="20" y="150" width="120" height="40" as="geometry" />
+      <mxGeometry x="20" y="100" width="120" height="40" as="geometry" />
     </mxCell>
     
     <mxCell id="3" value="Admin" style="shape=rectangle;fillColor=#FFFF99;" vertex="1" parent="1">
-      <mxGeometry x="20" y="250" width="120" height="40" as="geometry" />
+      <mxGeometry x="20" y="300" width="120" height="40" as="geometry" />
     </mxCell>
     
     <!-- Processes -->
-    <mxCell id="4" value="E-Commerce System" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
-      <mxGeometry x="200" y="180" width="150" height="80" as="geometry" />
+    <mxCell id="4" value="User Registration & Login" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="200" y="80" width="180" height="60" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="5" value="Product Browsing & Selection" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="200" y="160" width="180" height="60" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="6" value="Order Processing & Checkout" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="200" y="240" width="180" height="60" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="7" value="Inventory Management" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="200" y="320" width="180" height="60" as="geometry" />
     </mxCell>
     
     <!-- Data Stores -->
-    <mxCell id="5" value="Orders" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
-      <mxGeometry x="400" y="120" width="120" height="40" as="geometry" />
+    <mxCell id="8" value="User Database" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="450" y="80" width="140" height="40" as="geometry" />
     </mxCell>
     
-    <mxCell id="6" value="Products" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
-      <mxGeometry x="400" y="180" width="120" height="40" as="geometry" />
+    <mxCell id="9" value="Product Database" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="450" y="160" width="140" height="40" as="geometry" />
     </mxCell>
     
-    <mxCell id="7" value="Payments" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
-      <mxGeometry x="400" y="240" width="120" height="40" as="geometry" />
+    <mxCell id="10" value="Order Database" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="450" y="240" width="140" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="11" value="Inventory Database" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="450" y="320" width="140" height="40" as="geometry" />
     </mxCell>
     
     <!-- Flows -->
-    <mxCell id="8" edge="1" parent="1" source="2" target="4">
-      <mxGeometry as="geometry" />
-    </mxCell>
-    
-    <mxCell id="9" edge="1" parent="1" source="3" target="4">
-      <mxGeometry as="geometry" />
-    </mxCell>
-    
-    <mxCell id="10" edge="1" parent="1" source="4" target="5">
-      <mxGeometry as="geometry" />
-    </mxCell>
-    
-    <mxCell id="11" edge="1" parent="1" source="4" target="6">
-      <mxGeometry as="geometry" />
-    </mxCell>
-    
-    <mxCell id="12" edge="1" parent="1" source="4" target="7">
-      <mxGeometry as="geometry" />
-    </mxCell>
+    <mxCell id="12" edge="1" parent="1" source="2" target="4" value="Register/Login" />
+    <mxCell id="13" edge="1" parent="1" source="4" target="8" value="Store User Info" />
+    <mxCell id="14" edge="1" parent="1" source="2" target="5" value="Browse Products" />
+    <mxCell id="15" edge="1" parent="1" source="5" target="9" value="Retrieve Product Info" />
+    <mxCell id="16" edge="1" parent="1" source="2" target="6" value="Place Order" />
+    <mxCell id="17" edge="1" parent="1" source="6" target="10" value="Store Order Details" />
+    <mxCell id="18" edge="1" parent="1" source="6" target="11" value="Update Inventory" />
+    <mxCell id="19" edge="1" parent="1" source="3" target="7" value="Manage Inventory" />
+    <mxCell id="20" edge="1" parent="1" source="7" target="11" value="Update Stock" />
   </root>
 </mxGraphModel>
