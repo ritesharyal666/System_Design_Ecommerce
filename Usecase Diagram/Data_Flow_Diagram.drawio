@@ -1,10 +1,55 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.0.16">
-  <diagram name="Page-1" id="31g86YNdW1UTmFYV_9fx">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel>
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- External Entities -->
+    <mxCell id="2" value="Customer" style="shape=rectangle;fillColor=#FFFF99;" vertex="1" parent="1">
+      <mxGeometry x="20" y="150" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="3" value="Admin" style="shape=rectangle;fillColor=#FFFF99;" vertex="1" parent="1">
+      <mxGeometry x="20" y="250" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- Processes -->
+    <mxCell id="4" value="E-Commerce System" style="shape=ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="200" y="180" width="150" height="80" as="geometry" />
+    </mxCell>
+    
+    <!-- Data Stores -->
+    <mxCell id="5" value="Orders" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="400" y="120" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="6" value="Products" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="400" y="180" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <mxCell id="7" value="Payments" style="shape=rectangle;fillColor=#D3D3D3;" vertex="1" parent="1">
+      <mxGeometry x="400" y="240" width="120" height="40" as="geometry" />
+    </mxCell>
+    
+    <!-- Flows -->
+    <mxCell id="8" edge="1" parent="1" source="2" target="4">
+      <mxGeometry as="geometry" />
+    </mxCell>
+    
+    <mxCell id="9" edge="1" parent="1" source="3" target="4">
+      <mxGeometry as="geometry" />
+    </mxCell>
+    
+    <mxCell id="10" edge="1" parent="1" source="4" target="5">
+      <mxGeometry as="geometry" />
+    </mxCell>
+    
+    <mxCell id="11" edge="1" parent="1" source="4" target="6">
+      <mxGeometry as="geometry" />
+    </mxCell>
+    
+    <mxCell id="12" edge="1" parent="1" source="4" target="7">
+      <mxGeometry as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
