@@ -1,10 +1,12 @@
 <mxGraphModel dx="1098" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
   <root>
-    <!-- Customer -->
+    <!-- Background Cell -->
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
+
+    <!-- Customer -->
     <mxCell id="customer" value="Customer" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-      <mxGeometry x="50" y="50" width="100" height="30" as="geometry" />
+      <mxGeometry x="50" y="50" width="30" height="50" as="geometry" />
     </mxCell>
 
     <!-- E-Commerce Website -->
@@ -27,48 +29,20 @@
       <mxGeometry x="850" y="50" width="200" height="30" as="geometry" />
     </mxCell>
 
-    <!-- Messages and Interactions -->
-
-    <!-- Login Account -->
+    <!-- Login Account Message -->
     <mxCell id="loginmsg" edge="1" parent="1" source="customer" target="ecommerce">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="150" y="80" />
-          <mxPoint x="250" y="80" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Login Account" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="190" y="80" width="60" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Login Account" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="loginmsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
-    <!-- Verify Account -->
+    <!-- Verify Account Message -->
     <mxCell id="verifymsg" edge="1" parent="1" source="ecommerce" target="accountserver">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="400" y="80" />
-          <mxPoint x="450" y="80" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Verify Account" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="390" y="80" width="60" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Verify Account" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="verifymsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
     <!-- Alternative Flow: Valid Account -->
@@ -76,88 +50,36 @@
       <mxGeometry x="300" y="120" width="100" height="30" as="geometry" />
     </mxCell>
 
-    <!-- Browse for Items -->
+    <!-- Browse for Items Message -->
     <mxCell id="browsemsg" edge="1" parent="1" source="ecommerce" target="customer">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="250" y="150" />
-          <mxPoint x="150" y="150" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Browse for items" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="200" y="150" width="100" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Browse for items" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="browsemsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
-    <!-- Choose an Item -->
+    <!-- Choose an Item Message -->
     <mxCell id="choosemsg" edge="1" parent="1" source="customer" target="ecommerce">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="150" y="200" />
-          <mxPoint x="250" y="200" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Choose an item to order" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="190" y="200" width="120" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Choose an item to order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="choosemsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
-    <!-- Process Transaction -->
+    <!-- Process Transaction Message -->
     <mxCell id="processmsg" edge="1" parent="1" source="ecommerce" target="itemdb">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="250" y="250" />
-          <mxPoint x="650" y="250" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Process Transaction" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="450" y="250" width="100" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Process Transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="processmsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
-    <!-- Confirm Order -->
+    <!-- Confirm Order Message -->
     <mxCell id="confirmmsg" edge="1" parent="1" source="ecommerce" target="customer">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="250" y="300" />
-          <mxPoint x="150" y="300" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Confirm the Order?" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="200" y="300" width="100" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Confirm the Order?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="confirmmsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
     <!-- Alternative Flow: Order Confirmation -->
@@ -165,46 +87,20 @@
       <mxGeometry x="300" y="350" width="100" height="30" as="geometry" />
     </mxCell>
 
-    <!-- Processing Order -->
+    <!-- Processing Order Message -->
     <mxCell id="processingmsg" edge="1" parent="1" source="ecommerce" target="ordersinfo">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="250" y="400" />
-          <mxPoint x="850" y="400" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Processing Order" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="550" y="400" width="100" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Processing Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="processingmsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
-    <!-- Wait for Delivery Notification -->
+    <!-- Wait for Delivery Notification Message -->
     <mxCell id="waitmsg" edge="1" parent="1" source="ordersinfo" target="customer">
-      <mxGeometry relative="1" as="geometry">
-        <points>
-          <mxPoint x="850" y="450" />
-          <mxPoint x="150" y="450" />
-        </points>
-      </mxGeometry>
-      <mxCellValue>
-        <mxGraphModel>
-          <root>
-            <mxCell id="0" />
-            <mxCell id="1" parent="0" />
-            <mxCell id="label" value="Wait for Delivery Notification" style="text;html=1;align=center;verticalAlign=middle;autosize=1;" vertex="1" parent="1">
-              <mxGeometry x="500" y="450" width="150" height="20" as="geometry" />
-            </mxCell>
-          </root>
-        </mxGraphModel>
-      </mxCellValue>
+      <mxGeometry relative="1" as="geometry" />
+      <mxCell value="Wait for Delivery Notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="waitmsg">
+        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
+      </mxCell>
     </mxCell>
 
     <!-- Termination Symbols -->
