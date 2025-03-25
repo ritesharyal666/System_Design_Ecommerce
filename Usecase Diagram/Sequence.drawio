@@ -30,93 +30,69 @@
     </mxCell>
 
     <!-- Login Account Message -->
-    <mxCell id="loginmsg" edge="1" parent="1" source="customer" target="ecommerce">
+    <mxCell id="loginmsg" value="Login Account" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="customer" target="ecommerce">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Login Account" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="loginmsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Verify Account Message -->
-    <mxCell id="verifymsg" edge="1" parent="1" source="ecommerce" target="accountserver">
+    <mxCell id="verifymsg" value="Verify Account" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ecommerce" target="accountserver">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Verify Account" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="verifymsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Alternative Flow: Valid Account -->
-    <mxCell id="validaccount" value="[If account is valid]" style="shape=note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="validaccount" value="[If account is valid]" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="300" y="120" width="100" height="30" as="geometry" />
     </mxCell>
 
     <!-- Browse for Items Message -->
-    <mxCell id="browsemsg" edge="1" parent="1" source="ecommerce" target="customer">
+    <mxCell id="browsemsg" value="Browse for items" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ecommerce" target="customer">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Browse for items" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="browsemsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Choose an Item Message -->
-    <mxCell id="choosemsg" edge="1" parent="1" source="customer" target="ecommerce">
+    <mxCell id="choosemsg" value="Choose an item to order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="customer" target="ecommerce">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Choose an item to order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="choosemsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Process Transaction Message -->
-    <mxCell id="processmsg" edge="1" parent="1" source="ecommerce" target="itemdb">
+    <mxCell id="processmsg" value="Process Transaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ecommerce" target="itemdb">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Process Transaction" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="processmsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Confirm Order Message -->
-    <mxCell id="confirmmsg" edge="1" parent="1" source="ecommerce" target="customer">
+    <mxCell id="confirmmsg" value="Confirm the Order?" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ecommerce" target="customer">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Confirm the Order?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="confirmmsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Alternative Flow: Order Confirmation -->
-    <mxCell id="orderconfirmation" value="[If order is confirmed]" style="shape=note;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="orderconfirmation" value="[If order is confirmed]" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="300" y="350" width="100" height="30" as="geometry" />
     </mxCell>
 
     <!-- Processing Order Message -->
-    <mxCell id="processingmsg" edge="1" parent="1" source="ecommerce" target="ordersinfo">
+    <mxCell id="processingmsg" value="Processing Order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ecommerce" target="ordersinfo">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Processing Order" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="processingmsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Wait for Delivery Notification Message -->
-    <mxCell id="waitmsg" edge="1" parent="1" source="ordersinfo" target="customer">
+    <mxCell id="waitmsg" value="Wait for Delivery Notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;exitX=0.5;exitY=1;fontSize=10;" edge="1" parent="1" source="ordersinfo" target="customer">
       <mxGeometry relative="1" as="geometry" />
-      <mxCell value="Wait for Delivery Notification" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" vertex="1" parent="waitmsg">
-        <mxGeometry x="0.5" y="-10" relative="1" as="geometry" />
-      </mxCell>
     </mxCell>
 
     <!-- Termination Symbols -->
-    <mxCell id="terminate1" value="X" style="shape=terminator;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="terminate1" value="X" style="shape=terminator;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="50" y="500" width="20" height="20" as="geometry" />
     </mxCell>
-    <mxCell id="terminate2" value="X" style="shape=terminator;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="terminate2" value="X" style="shape=terminator;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="250" y="500" width="20" height="20" as="geometry" />
     </mxCell>
-    <mxCell id="terminate3" value="X" style="shape=terminator;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="terminate3" value="X" style="shape=terminator;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="450" y="500" width="20" height="20" as="geometry" />
     </mxCell>
-    <mxCell id="terminate4" value="X" style="shape=terminator;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="terminate4" value="X" style="shape=terminator;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="650" y="500" width="20" height="20" as="geometry" />
     </mxCell>
-    <mxCell id="terminate5" value="X" style="shape=terminator;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+    <mxCell id="terminate5" value="X" style="shape=terminator;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="850" y="500" width="20" height="20" as="geometry" />
     </mxCell>
   </root>
